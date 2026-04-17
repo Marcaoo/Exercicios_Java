@@ -15,15 +15,14 @@ public class Main {
 		if(hora < 12) {	// verifica se é demanhã
 			System.out.println("Bom dia");
 		}
-		else {
-			if(hora < 18) {	// verifica se é detarde
-				System.out.println("Boa tarde");
-			}
-			else {
-				System.out.println("Boa noite"); // verifica se é anoite
-			}
-			
+		else if(hora < 18) {	// verifica se é detarde
+			System.out.println("Boa tarde");
 		}
+		else {
+			System.out.println("Boa noite"); // verifica se é anoite
+		}
+			
+		
 		
 		sc.close();
 	}
